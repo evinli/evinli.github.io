@@ -1,0 +1,20 @@
+# -- Site Configuration --
+# Refer to the theme docs for more details about each of these parameters.
+# https://blowfish.page/docs/getting-started/
+
+theme = "blowfish"
+baseURL = "https://evinli.github.io/"
+defaultContentLanguage = "en"
+
+enableRobotsTXT = true
+paginate = 50
+summaryLength = 30
+googleAnalytics = "G-Y1DBS59GXQ"
+
+[imaging]
+  anchor = 'Center'
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+

@@ -1,0 +1,20 @@
+languageCode = "en"
+languageName = "English"
+weight = 1
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+
+title = "Evin Li"
+description = "Evin Li's Web Portfolio"
+
+[author]
+  name = "Evin Li"
+  image = "img/profile.jpg"
+  headline = "4th year Engineering Physics @ UBC"
+  bio = "Hello my name is Evin"
+  links = [
+    { email = "mailto:evinywli@gmail.com" },
+    { github = "https://github.com/evinli" },
+    { linkedin = "https://www.linkedin.com/in/evin-li-162905190/" }
+  ]

@@ -1,5 +1,5 @@
 ---
-title: "EduSphere"
+title: "UBC AeroDesign"
 tags: ["new", "docs"]
 ---
 

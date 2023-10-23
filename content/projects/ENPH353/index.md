@@ -1,5 +1,5 @@
 ---
-title: "EduSphere"
+title: "Self-Driving Gazebo Car"
 tags: ["new", "docs"]
 ---
 

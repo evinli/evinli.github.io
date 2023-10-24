@@ -5,7 +5,7 @@ tags: ["C++", "Soldering", "STM32 Microcontroller", "PlatformIO", "PID Control"]
 ---
 
 ### What Is It
-A 2nd year Engineering Physics robotics project built from 4 weeks of sleepless nights, many MANY cups of coffee, and the support of amazing TAs (and teammates!).
+A 2nd year Engineering Physics robotics project built from 4 weeks of sleepless nights, many MANY cups of coffee, and the support of amazing TAs (and teammates!). We named our robot CHONKY.
 
 The challenge was to build a treasure-hunting robot completely from scratch that could recover lost treasures from temple ruins. To do so, the robot would need to follow tape along a ramp, cross a 6” chicken wire gap, differentiate and follow infrared signals, and pick up irregularly shaped treasure statues positioned on 2” pedestals - all in under 2 minutes.
 

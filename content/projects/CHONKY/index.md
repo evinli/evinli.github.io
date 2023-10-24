@@ -38,13 +38,22 @@ My contributions were mostly on the electrical and software end of the project. 
 ### Software Architecture
 We built our software using C++ and the Arduino Framework, which we then flashed onto a STM32 Bluepill microcontroller. To make our codebase as modular and easy-to-test as possible, we decided to use a finite state machine to organize the control logic and packed lower-level functionalities into smaller driver modules.
 
-Soon enough, we realized that with 15 sensors and 9 motors, we were running out of I/O pins on a single Bluepill. To pivot, we took inspiration from some upper years who had competed in the 2018 competition [Order66](https://order66bot.github.io/) to use two Bluepills and establish a master-slave communication protocol. While the master Bluepill was responsible for detecting treasures and actuating the arm, the slave Bluepill was in charge of all things drive and navigation related.
+Soon enough, we realized that with 15 sensors and 9 motors, we were running out of I/O pins on a single Bluepill. To pivot, we took inspiration from some upper years who had competed in the 2018 competition ([Order66](https://order66bot.github.io/)) to use two Bluepills and establish a master-slave communication protocol. While the master Bluepill was responsible for detecting treasures and actuating the arm, the slave Bluepill was in charge of all things drive and navigation related.
 
+{{< alert "github" >}}
 You can find our source code [here](https://github.com/evinli/CHONKY).
+{{< /alert >}}
 
-One of the most challenging tasks I faced was getting our PID for tape and IR following to work. Despite days of tuning our P, I, and D values, the mechanical response to our software was still super laggy and not improving. Eventually, we realized the problem was not in our software, but rather an issue with our motors and H-bridge circuits. Because how heavy CHONKY was, it turned out the motors could not supply enough torque below a certain speed. This was what caused the jerking-swaying motion in our PID. We also realized that we needed to decrease the capcitance value across the H-bridge so that the motor could discharge faster and change speeds faster. Here is a sneak peak of our PID code.
+One of the most challenging tasks I faced was getting our PID for tape and IR following to work. Despite days of tuning our P, I, and D values, the mechanical response to our software was still super laggy and not improving. Eventually, we realized the problem was not in our software, but rather an issue with our motors and H-bridge circuits. Because how heavy CHONKY was, it turned out the motors could not supply enough torque below a certain speed. This was what caused the jerking-swaying motion in our PID. We also realized that we needed to decrease the capcitance value across the H-bridge so that the motor could discharge faster and change speeds faster.
+
+Here is a snippet of our PID code:
 
 ```cpp
+/**
+ * @file      PID.cpp
+ * @brief     Class implementation for the PID feedback-control
+ */
+
 // Get reflectance sensor readings
 leftReading = analogRead(LEFT_TAPE_SENSOR);
 centreReading = analogRead(CENTER_TAPE_SENSOR);
@@ -79,6 +88,5 @@ leftMotor->setSpeed(leftMotorSpeed);
 rightMotor->setSpeed(rightMotorSpeed);
 ```
 
-### Final Words
-This was my first big undergrad project and one that I'll never forget <3!! Shoutout to my team (Asvin, Farhan, and Adarsh) for being the best teammates I could've asked for and for our favorite TA, Rudi - for being our honorary 5th member.
+Again, shoutout to my team (Asvin, Farhan, and Adarsh) for being the best teammates I could've asked for and to our favorite TA, Rudi, for being in the trenches with us the entire way.
 

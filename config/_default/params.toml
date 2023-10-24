@@ -50,7 +50,7 @@ mainSections = ["projects"]
   invertPagination = false
   showReadingTime = false
   showTableOfContents = true
-  showTaxonomies = false
+  showTaxonomies = true
   showWordCount = false
   showComments = false
   # sharingLinks = ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
@@ -59,14 +59,16 @@ mainSections = ["projects"]
   showHero = true
   layoutBackgroundBlur = true # only used when heroStyle equals background
   layoutBackgroundHeaderSpace = false
+  showHeadingAnchors = true
   showViews = false
   showReadingTime = false
   showLikes = false
   showBreadcrumbs = false
-  showSummary = false
+  showSummary = true
   showCards = true
   cardView = true
-  showTableOfContents = false
+  showTableOfContents = true
+  showTaxonomies = true
   groupByYear = false
 
 [sitemap]

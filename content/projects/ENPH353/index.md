@@ -1,8 +1,7 @@
 ---
-title: "Self-Driving Gazebo Car"
-tags: ["new", "docs"]
+title: "Self-Driving AI Car"
+summary: "A self-driving virtual robot that uses deep learning and computer vision to classify license plates and navigate roads."
+tags: ["OpenCV", "Convolution Neural Network", "TensorFlow", "Reinforcement Learning", "ROS"]
 ---
 
-{{< badge >}}
-Coming soon!
-{{< /badge >}}
+hhello

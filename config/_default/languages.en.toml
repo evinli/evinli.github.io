@@ -10,7 +10,7 @@ description = "Evin Li's Web Portfolio"
 
 [author]
   name = "Evin Li"
-  image = "img/profile.jpg"
+  image = "img/profile.png"
   headline = "4th year Engineering Physics @ UBC"
   bio = "Hello my name is Evin"
   links = [

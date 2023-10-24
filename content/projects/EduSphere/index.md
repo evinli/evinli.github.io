@@ -10,9 +10,9 @@ EduSphere is an interactive AR/VR language learning VisionOS application designe
 {{< youtube r9khaSJEWeY >}}
 
 ### How We Built It
-We built the VisionOS app using the Beta development kit for the Apple Vision Pro. The front-end and AR/VR components were made using Swift, SwiftUI, Alamofire, RealityKit, and concurrent MVVM design architecture. 3D Models were converted through Reality Converter as .usdz files for AR modelling. We stored these files on the Google Cloud Bucket Storage, with their corresponding metadata on CockroachDB.
+We built the VisionOS app using the Beta development kit for the Apple Vision Pro. The front-end and AR/VR components were made using Swift, SwiftUI, Alamofire, RealityKit, and concurrent MVVM design architecture. We stored our 3D models in Google Cloud Bucket Storage, with their corresponding metadata on CockroachDB.
 
-Our backend features various scripts involving Python, SQL, Cohere LLMs, and Google Translation AI to allow for real-time text translation and conversing. I used the `googletrans` python library to translate text and generated chatbot responses to user prompts using the Cohere API. To connect our frontend to the backend and allow HTTP `get` and `post` requests, we developed REST APIs in Flask to access each of our endpoints.
+Our back-end features various scripts involving Python, SQL, Cohere LLMs, and Google Translation AI to allow for real-time text translation and conversing. I used the `googletrans` python library to translate text and generated chatbot responses to user prompts using the Cohere API. To connect our front-end with the back-end and allow HTTP `get` and `post` requests, we developed REST APIs in Flask to access each of our endpoints.
 
 This was my first time working with Flask and building APIs so I found it super cool and also a lot easier than I'd imagined! Here are some of the APIs I created:
 

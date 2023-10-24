@@ -4,4 +4,6 @@ summary: "A student design team that designs and builds fixed-wing aircraft to c
 tags: ["Python", "ZMQ", "Redis", "Docker", "Leaflet", "OpenStreetMap"]
 ---
 
-hhello
+{{< badge >}}
+To be added
+{{< /badge >}}

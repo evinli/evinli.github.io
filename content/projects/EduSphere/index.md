@@ -4,4 +4,6 @@ summary: "An AR language learning game submitted for Hack the North 2023, select
 tags: ["REST APIs", "Flask", "Google Cloud Translation API", "Cohere LLM API"]
 ---
 
-hhello
+{{< badge >}}
+To be added
+{{< /badge >}}

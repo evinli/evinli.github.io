@@ -18,6 +18,8 @@ After many long meetings in the basement of the UBC Hebb building, we eventually
 
 On the mechanical side, we had an arm that consisted of 3 independent joints, encoded using potentiometers and DC motors to provide position feedback and reinforced with high gear ratios (eg. 40:1) to withstand heavy loading. Our chassis was primarily cut from hardboard, and our servo-actuated claw was wrapped with rubber bands to provide better grasp on oddly shaped objects.
 
+To breathe life into our mechanical systems, our PCB stacks consisted of six H-bridge and optically-isolated servo circuits to control our drive and arm motors, as well as a five reflectance sensor and three infrared bandpass circuits for tape following and infrared navigation. All wires were intentionally shielded to minimize electrical noise and interfaced with PCBs using JST connectors.
+
 My contributions were mostly on the electrical and software end of the project. I helped breadboard the initial IR filtration and tape-following circuits, soldered the power distribution boards, and designed the architecture for our software system.
 
 {{< gallery >}}

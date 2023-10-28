@@ -38,7 +38,7 @@ My contributions were mostly on the electrical and software end of the project. 
 {{< /gallery >}}
 
 ### Software Architecture
-We built our software using C++ and the Arduino Framework, which we then flashed onto a STM32 Bluepill microcontroller. To make our codebase as modular and easy-to-test as possible, we decided to use a finite state machine to organize the control logic and packed lower-level functionalities into smaller driver modules.
+The entirety of our codebase was written in C++ using the Arduino framework, and flashed onto a STM32 Blue Pill microcontroller. To make our codebase as modular and easy-to-test as possible, we decided to use a finite state machine to organize the control logic and packed lower-level functionalities into smaller driver modules.
 
 Soon enough, we realized that with 15 sensors and 9 motors, we were running out of I/O pins on a single Bluepill. To pivot, we took inspiration from some upper years who had competed in the 2018 competition ([Order66](https://order66bot.github.io/)) to use two Bluepills and establish a master-slave communication protocol. While the master Bluepill was responsible for detecting treasures and actuating the arm, the slave Bluepill was in charge of all things drive and navigation related.
 

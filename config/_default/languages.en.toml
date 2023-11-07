@@ -12,7 +12,6 @@ description = "Evin Li's Web Portfolio"
   name = "Evin Li"
   image = "img/profile.png"
   headline = "4th year Engineering Physics @ UBC"
-  bio = "Hello my name is Evin"
   links = [
     { email = "mailto:evinywli@gmail.com" },
     { github = "https://github.com/evinli" },

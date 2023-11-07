@@ -29,7 +29,7 @@ mainSections = ["projects"]
 [homepage]
   layout = "profile" # valid options: page, profile, hero, card, background, custom
   showRecent = true
-  showRecentItems = 6
+  showRecentItems = 3
   showMoreLink = true
   showMoreLinkDest = "/projects"
   cardView = true
@@ -56,6 +56,7 @@ mainSections = ["projects"]
   # sharingLinks = ["facebook", "twitter", "pinterest", "reddit", "linkedin", "email"]
 
 [list]
+  showDate = false
   showHero = true
   layoutBackgroundBlur = true # only used when heroStyle equals background
   layoutBackgroundHeaderSpace = false

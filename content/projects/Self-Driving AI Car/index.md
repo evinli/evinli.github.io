@@ -5,8 +5,6 @@ tags: ["OpenCV", "Convolution Neural Network", "TensorFlow", "Reinforcement Lear
 ---
 
 ### What Is It
-{{< badge >}}
-To be added
-{{< /badge >}}
+Coming soon! In the meantime, you can read our report [here](https://drive.google.com/file/d/1A7htYGO8YdxVihsNoS3vchLSX5ngmj4E/view?usp=sharing)!
 
 

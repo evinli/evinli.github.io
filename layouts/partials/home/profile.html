@@ -17,7 +17,7 @@
         <h2 class="text-lg text-neutral-500 dark:text-neutral-400">{{ . | markdownify | emojify }}</h2>
       {{ end }}
       <div class="mt-1 text-2xl">{{ partialCached "author-links.html" . }}</div>
-      <div style="margin-top: 20px; line-height: 0.9" class="text-sm text-neutral-500 dark:text-neutral-400 prose dark:prose-invert">
+      <div style="margin-top: 20px" class="text-sm text-neutral-500 dark:text-neutral-400 prose dark:prose-invert">
         {{ .Content | emojify }}
     </div>
     </div>

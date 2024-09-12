@@ -11,7 +11,7 @@ description = "Evin Li's Web Portfolio"
 [author]
   name = "Evin Li"
   image = "img/profile.png"
-  headline = "5th year Eng Phys @ UBC  |  Firmware Co-op @ VodaSafe"
+  headline = "5th Year Engineering Physics @ UBC"
   links = [
     { email = "mailto:evinywli@gmail.com" },
     { github = "https://github.com/evinli" },

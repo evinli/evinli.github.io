@@ -1,25 +1,27 @@
-{{ $disableImageOptimization := .Site.Params.disableImageOptimization | default false }}
 <article class="{{ if not .Site.Params.homepage.showRecent }}h-full{{ end }} text-left" style="margin-bottom: 120px;">
-  <div class="flex justify-center mb-3">
+  <div class="flex justify-center mb-3 flex-col md:flex-row">
+    <!-- Author Image -->
     {{ with .Site.Author.image }}
       {{ $authorImage := resources.Get . }}
       {{ with $authorImage }}
         {{ $authorImage = $authorImage.Resize "800x800" }}
-        <img class="mb-3 h-60 w-60"
+        <img class="mb-3 h-60 w-60 mx-auto md:mx-0"
              style="width: auto; height: 29vh"
              alt="{{ $.Site.Author.name | default "Author" }}"
              src="{{ $authorImage.RelPermalink }}">
-        {{ end }}
+      {{ end }}
     {{ end }}
-    <div class="ml-4" style="margin-left: 90px;">
+
+    <!-- Author Text -->
+    <div class="md:ml-4 text-left" style="margin-left: 30px;">
       <h1 class="text-4xl font-extrabold">{{ .Site.Author.name | default .Site.Title }}</h1>
       {{ with .Site.Author.headline }}
         <h2 class="text-lg text-neutral-500 dark:text-neutral-400">{{ . | markdownify | emojify }}</h2>
       {{ end }}
       <div class="mt-1 text-2xl">{{ partialCached "author-links.html" . }}</div>
-      <div style="margin-top: 20px" class="text-base text-neutral-500 dark:text-neutral-400 prose dark:prose-invert">
+      <div style="margin-top: 20px" class="text-sm text-neutral-500 dark:text-neutral-400 prose dark:prose-invert">
         {{ .Content | emojify }}
-    </div>
+      </div>
     </div>
   </div>
 </article>
